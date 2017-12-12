@@ -1,0 +1,9 @@
+{
+  "login" : {
+    "description" : "Đăng nhập để bắt đầu sử dụng",
+    "sign_in_button" : "Đăng nhập",
+    "sign_in_using_facebook" : "Đăng nhập bằng Facebook",
+    "email" : "Email",
+    "password" : "Mật khẩu"
+  }
+}

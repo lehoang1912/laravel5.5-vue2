@@ -1,0 +1,9 @@
+{
+  "login" : {
+    "description" : "Sign in to start your session",
+    "sign_in_button": "Sign in",
+    "sign_in_using_facebook": "Sign in using Facebook",
+    "email": "Email",
+    "password": "Password"
+  }
+}
