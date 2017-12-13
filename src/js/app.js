@@ -34,5 +34,7 @@ new Vue({
             }
             return Promise.reject(error);
         });
+
+        this.$i18n.locale = this.$store.state.lang
     }
 });

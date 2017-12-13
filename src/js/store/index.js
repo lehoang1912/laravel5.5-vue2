@@ -4,7 +4,7 @@ import actions from './actions';
 
 export default new Vuex.Store({
   state: {
-    lang: 'en'
+    lang: 'vn'
   },
 
   mutations,
