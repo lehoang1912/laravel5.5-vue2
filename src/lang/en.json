@@ -4,6 +4,7 @@
     "sign_in_button": "Sign in",
     "sign_in_using_facebook": "Sign in using Facebook",
     "email": "Email",
-    "password": "Password"
+    "password": "Password",
+    "forgot_password": "I forgot my password"
   }
 }

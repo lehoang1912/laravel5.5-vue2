@@ -1,4 +1,33 @@
-<div>
-  <span>{{ $t("login.description") }}</span>
-  <img src="img/bot_logo.png">
+<div class="login-box">
+  <div class="login-logo">
+    <b>Chatbot admin</b>
+  </div>
+  <div class="login-box-body">
+    <p class="login-box-msg">{{ $t("login.description") }}</p>
+
+    <div>
+      <span v-show="errors.has('email')" class="text-red">{{ errors.first('email') }}</span>
+      <div class="form-group has-feedback">
+        <input type="email" class="form-control" :placeholder="$t('login.email')" v-model="email" v-validate="'required|email'" name="email" :data-vv-as="$t('login.email')">
+        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+      </div>
+
+      <span v-show="errors.has('password')" class="text-red">{{ errors.first('password') }}</span>
+      <div class="form-group has-feedback">
+        <input type="password" class="form-control" :placeholder="$t('login.password')" v-model="password" v-validate="'required|min:6|max:255'" name="password" :data-vv-as="$t('login.password')">
+        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+      </div>
+      <div class="row">
+        <div class="col-xs-8">
+        </div>
+        <!-- /.col -->
+        <div class="col-xs-4">
+          <button class="btn btn-primary btn-block btn-flat" @click="login()" :disabled="errors.any() || !email || !password">{{ $t("login.sign_in_button")}}</button>
+        </div>
+        <!-- /.col -->
+      </div>
+    </div>
+
+    <a href="#">{{ $t("login.forgot_password") }}</a><br>
+  </div>
 </div>

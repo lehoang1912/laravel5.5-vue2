@@ -2,6 +2,11 @@ import VueRouter from 'vue-router';
 
 let routes = [
     {
+        path: '/',
+        component: require('./views/dashboard/Dashboard'),
+        meta: { requiresAuth: true }
+    },
+    {
         path: '/login',
         component: require('./views/login/Login')
     },

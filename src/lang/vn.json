@@ -4,6 +4,7 @@
     "sign_in_button" : "Đăng nhập",
     "sign_in_using_facebook" : "Đăng nhập bằng Facebook",
     "email" : "Email",
-    "password" : "Mật khẩu"
+    "password" : "Mật khẩu",
+    "forgot_password": "Quên mật khẩu"
   }
 }
